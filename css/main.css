@@ -137,11 +137,11 @@ section:nth-of-type(even) {
 }
 
 .skills-list li:hover {
-  background-color: #65559b;
+  background-color: #000000;
 }
 
 .btn-portfolio {
-  border: 3px solid #8578b4;
+  border: 3px solid #6a6a6a;
   margin: 20px;
   font-weight: 700;
   background-color: #444444;
@@ -154,48 +154,8 @@ section:nth-of-type(even) {
 }
 
 .btn-portfolio:hover {
-  border: 3px solid #8578b4;
-  background-color: #65559b;
-}
-
-.cards-group {
-  padding-top: 20px;
-  margin: 10px 10vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.card {
-  margin: 0 10px;
-  padding: 20px;
-  background-color: #232323;
-  color: #fff;
-  box-shadow: 0 0px 10px #00000069;
-  border-radius: 25px;
-  width: 300px;
-  transition: all 0.2s ease;
-}
-
-.card:hover {
-  transform: scale(1.048);
-  background-color: #564592;
-}
-
-.card img {
-  width: 100px;
-}
-
-.card h3 {
-  padding-bottom: 10px;
-  border-bottom: solid 2px #e9e9e9;
-  margin-bottom: 0;
-}
-
-.card p {
-  font-size: 1.1rem;
-  font-weight: 300;
-  margin-bottom: 0;
+  border: 3px solid #000000;
+  background-color: #000000;
 }
 
 footer {
@@ -227,12 +187,12 @@ footer a {
 }
 
 footer a:hover {
-  color: #8578b4;
+  color: #8867ff;
 }
 
 footer i {
   font-size: 0.9rem;
-  color: #e46060;
+  color: #00000;
 }
 
 /* Scroll styles */
