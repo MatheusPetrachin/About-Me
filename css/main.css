@@ -55,6 +55,10 @@ header>div {
     display: inline-block;
 }
 
+.tooltip-sm {
+    display: none;
+}
+
 input {
     opacity: 0%;
     position: absolute;
@@ -119,6 +123,8 @@ input:active {
 }
 
 .social-media {
+    background-color: transparent;
+    border: none;
     padding: 0;
 }
 
@@ -354,5 +360,16 @@ footer i {
         margin: 10px 0px;
         width: 100%;
         max-width: 300px;
+    }
+}
+
+@media (max-width: 765px) {
+    .tooltip {
+        display: none;
+    }
+    .tooltip-sm {
+        position: relative;
+        margin-top: 0px;
+        display: inline-block;
     }
 }
