@@ -362,14 +362,3 @@ footer i {
         max-width: 300px;
     }
 }
-
-@media (max-width: 765px) {
-    .tooltip {
-        display: none;
-    }
-    .tooltip-sm {
-        position: relative;
-        margin-top: 0px;
-        display: inline-block;
-    }
-}
