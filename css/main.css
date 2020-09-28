@@ -351,6 +351,6 @@ footer i {
         display: none;
     }
     .body {
-        min-width: 100vh;
+        width: device-width;
     }
 }
