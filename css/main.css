@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    min-width: 100vh;
+    min-width: auto;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100vh auto auto auto auto auto;
@@ -346,16 +346,10 @@ footer i {
     }
 }
 
+
+/* 
 @media (max-width: 100vh) {
     .slide-anchor {
         display: none;
     }
-    .body {
-        min-width: auto;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto auto;
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-    }
-}
+} */
