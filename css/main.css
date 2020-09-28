@@ -10,7 +10,7 @@ html {
 body {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh auto auto auto auto 50px;
+    grid-template-rows: 100vh auto auto auto auto auto;
     margin: 0;
     font-family: 'Nunito', sans-serif;
 }
@@ -129,7 +129,7 @@ input:active {
 }
 
 .social-media li {
-    margin: 0 10px;
+    margin: 0 15px;
     display: inline-block;
 }
 
