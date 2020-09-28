@@ -353,5 +353,6 @@ footer i {
     .body {
         min-width: 100vh;
         max-width: 100vh;
+        scale: 1;
     }
 }
