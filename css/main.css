@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    min-width: 100vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100vh auto auto auto auto auto;
@@ -148,7 +149,7 @@ input:active {
 .slide-anchor {
     position: absolute;
     bottom: 20px;
-    left: calc(50% - 11px);
+    left: calc(50%);
 }
 
 section:nth-of-type(odd) {
@@ -342,5 +343,11 @@ footer i {
         margin: 10px 0px;
         width: 100%;
         max-width: 300px;
+    }
+}
+
+@media (max-width: 100vh) {
+    .slide-anchor {
+        display: none;
     }
 }
