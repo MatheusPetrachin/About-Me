@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    min-width: auto;
+    min-width: 100vh;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100vh auto auto auto auto auto;
@@ -349,5 +349,8 @@ footer i {
 @media (max-width: 100vh) {
     .slide-anchor {
         display: none;
+    }
+    .body {
+        zoom: 1;
     }
 }
