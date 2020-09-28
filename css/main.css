@@ -351,6 +351,6 @@ footer i {
         display: none;
     }
     .body {
-        zoom: 0.8;
+        width: 100vh;
     }
 }
