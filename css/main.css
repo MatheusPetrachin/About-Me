@@ -350,4 +350,7 @@ footer i {
     .slide-anchor {
         display: none;
     }
+    .body {
+        min-width: 100vh;
+    }
 }
