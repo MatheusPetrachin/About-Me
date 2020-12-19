@@ -369,6 +369,9 @@ footer i {
 }
 
 @media (max-width: 570px) {
+    body {
+        width: "device-width";
+    }
     .slide-anchor {
         display: none;
     }
