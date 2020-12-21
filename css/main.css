@@ -390,7 +390,8 @@ footer i {
     margin: auto;
 }
 
-.mySlides {
+.mySlides,
+.myVideos {
     display: none;
 }
 
@@ -447,7 +448,8 @@ footer i {
     top: 0;
 }
 
-.dot {
+.dot,
+.dotVideo {
     cursor: pointer;
     height: 15px;
     width: 15px;
