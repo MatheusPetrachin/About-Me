@@ -154,8 +154,10 @@ input:active {
     transition: all 0.2s ease;
 }
 
-.social-media i:hover {
-    color: #000000;
+.social-media i:hover,
+.slide-anchor:hover {
+    color: #ffffff;
+    text-shadow: 0 0 30px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff;
 }
 
 .slide-anchor {
