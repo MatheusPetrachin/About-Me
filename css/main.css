@@ -50,6 +50,17 @@ header>div {
     align-items: center;
 }
 
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile:hover {
+    color: #ffffff;
+    box-shadow: 0 0 30px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff;
+}
+
 .title {
     font-size: 2.2rem;
     margin: 5px 0;
