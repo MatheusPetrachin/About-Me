@@ -50,6 +50,19 @@ header>div {
     align-items: center;
 }
 
+.profile {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 50%;
+}
+
+.profile:hover {
+    color: #ffffff;
+    box-shadow: 0 0 30px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff;
+}
+
 .title {
     font-size: 2.2rem;
     margin: 5px 0;
@@ -154,8 +167,10 @@ input:active {
     transition: all 0.2s ease;
 }
 
-.social-media i:hover {
-    color: #000000;
+.social-media i:hover,
+.slide-anchor:hover {
+    color: #ffffff;
+    text-shadow: 0 0 30px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff;
 }
 
 .slide-anchor {
@@ -390,7 +405,8 @@ footer i {
     margin: auto;
 }
 
-.mySlides {
+.mySlides,
+.myVideos {
     display: none;
 }
 
@@ -447,7 +463,8 @@ footer i {
     top: 0;
 }
 
-.dot {
+.dot,
+.dotVideo {
     cursor: pointer;
     height: 15px;
     width: 15px;
