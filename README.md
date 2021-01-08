@@ -2,6 +2,7 @@
 
 <a href="https://matheuspetrachin.github.io/About-Me/" target="_blank" alt="About-Me"><img src="https://img.shields.io/badge/-About--Me-blue"/></a>
 
-In this repository I just created a resume in LandingPage format
+<p align="center">In this repository I just created a resume in LandingPage format</p>
+
 
 <a href="https://matheuspetrachin.github.io/About-Me/"><img src="img/about-me.png"></a>
