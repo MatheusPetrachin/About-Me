@@ -1,6 +1,6 @@
 # About-Me
-Link: https://matheuspetrachin.github.io/About-Me/
+<a href="https://matheuspetrachin.github.io/About-Me/" target="_blank" alt="About-Me"><img src="https://img.shields.io/badge/-About--Me-blue"/></a>
 
-Neste repositório eu apenas criei um currículo em formato de LandingPage
+In this repository I just created a resume in LandingPage format
 
 <a href="https://matheuspetrachin.github.io/About-Me/"><img src="img/about-me.png"></a>
