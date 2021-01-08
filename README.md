@@ -3,4 +3,4 @@ Link: https://matheuspetrachin.github.io/About-Me/
 
 Neste repositório eu apenas criei um currículo em formato de LandingPage
 
-<img href="img/about-me.png">
+<img src="img/about-me.png">
