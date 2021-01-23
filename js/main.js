@@ -26,26 +26,16 @@ function outFunc() {
 
 // Galerias de Video/Imagem
 var slideIndex = 1;
-var videoIndex = 1;
 showSlides(slideIndex);
-showVideos(videoIndex);
 
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-function plusVideos(n) {
-    showVideos(videoIndex += n);
-}
-
 // Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
-}
-
-function currentVideo(n) {
-    showVideos(videoIndex = n);
 }
 
 WebFontConfig = {
@@ -74,20 +64,4 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-}
-
-function showVideos(n) {
-    var i;
-    var videos = document.getElementsByClassName("myVideos");
-    var dots = document.getElementsByClassName("dotVideo");
-    if (n > videos.length) { videoIndex = 1 }
-    if (n < 1) { videoIndex = videos.length }
-    for (i = 0; i < videos.length; i++) {
-        videos[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    videos[videoIndex - 1].style.display = "block";
-    dots[videoIndex - 1].className += " active";
 }
