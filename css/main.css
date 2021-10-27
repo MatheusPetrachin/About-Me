@@ -38,7 +38,7 @@ header {
 
 .headerBox {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 header>div {
@@ -51,17 +51,10 @@ header>div {
 }
 
 .profile {
-    width: 200px;
-    height: 200px;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
     transition: .8s;
-}
-
-.profile:hover {
-    color: #ffffff;
-    box-shadow: 0 0 30px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff;
 }
 
 .title {
@@ -157,7 +150,7 @@ input:active {
 }
 
 .social-media li {
-    margin: 0 15px;
+    margin: 0 10px;
     display: inline-block;
 }
 
@@ -504,4 +497,26 @@ footer i {
     to {
         opacity: 1
     }
+}
+
+.card-badge {
+    background-color: aliceblue;
+    border-radius: 1em;
+    width: 350px;
+    height: 450px;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    background: url('../img/back_badge.jpg');
+    background-size: cover;
+    box-shadow: 0 0 0px #000000, 0 0 30px #000000, 0 0 30px #000000;
+}
+
+.badge-hole {
+    width: 100px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    text-align: center;
+    margin-left: 7.5em;
 }
