@@ -19,9 +19,7 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-
 /* links */
-
 a {
     text-decoration: none;
     color: inherit;
@@ -65,7 +63,6 @@ header>div {
 
 
 /* ClipBoard Config */
-
 .tooltip {
     position: relative;
     margin-top: 0px;
@@ -128,8 +125,6 @@ input:active {
     visibility: visible;
     opacity: 1;
 }
-
-
 /* Fim ClipBoard Config */
 
 .subtitle {
@@ -379,11 +374,11 @@ footer i {
 }
 
 @media (max-width: 570px) {
-    body {
-        width: "device-width";
+    html {
+        scale: 1.0;
     }
-    .slide-anchor {
-        display: none;
+    body {
+        scale: 1.0;
     }
 }
 

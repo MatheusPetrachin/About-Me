@@ -24,6 +24,22 @@ function outFunc() {
     tooltip.innerHTML = "Click to copy my email";
 }
 
+function getAge() {
+    var today = new Date();
+    var birthDate = new Date(1998, 06, 15);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    var myAgeDiv = document.getElementById("myAgeDiv");
+    myAgeDiv.innerHTML = age;
+
+    console.log(age)
+}
+getAge();
+
 // Galerias de Video/Imagem
 var slideIndex = 1;
 showSlides(slideIndex);
