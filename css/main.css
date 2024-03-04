@@ -31,7 +31,7 @@ header {
     text-align: center;
     background-size: 300% 300%;
     animation: gradient 10s ease infinite;
-    background: url('https://cdn6.f-cdn.com/files/download/82615852/web-dev-ty.jpg');
+    background: url('../img/background_2.jpg');
     background-size: cover;
 }
 
@@ -514,14 +514,22 @@ footer i {
     background-color: aliceblue;
     border-radius: 1em;
     width: 350px;
-    height: 400px;
+    height: 450px;
     padding: 15px;
     text-align: center;
     color: #ffffff;
     background: url('../img/back_badge.jpg');
     background-size: cover;
     box-shadow: 0 0 0px #000000, 0 0 30px #000000, 0 0 30px #000000;
+    transform: rotateY(0deg);
+    transition: all 0.9s ease;
 }
+
+/* .card-badge:hover {
+    box-shadow: 0 0 0px #000000, 0 0 30px #000000, 0 0 30px #000000;
+    transform: rotateY(180deg);
+    transition: all 0.9s ease;
+} */
 
 .badge-hole {
     width: 100px;
