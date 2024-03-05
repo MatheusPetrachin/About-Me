@@ -69,10 +69,12 @@ input {
     opacity: 0%;
     position: absolute;
     cursor: grab;
+    display: none;
 }
 
 input:active {
     cursor: grabbing;
+    display: inline-block;
 }
 
 .tooltip button {
