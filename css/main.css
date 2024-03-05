@@ -18,7 +18,6 @@ body {
     grid-template-rows: 100% auto auto auto auto auto;
     margin: 0;
     font-family: 'Nunito', sans-serif;
-    min-width: 480px;
 }
 
 /* links */
