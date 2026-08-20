@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matheuspetrachin.github.io/About-Me/sitemap.xml

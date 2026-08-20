@@ -1,0 +1,16 @@
+{
+    "name": "Matheus Petrachin | Senior Software Engineer",
+    "short_name": "Matheus Petrachin",
+    "description": "Currículo online de Matheus Petrachin, Senior Software Engineer C#/.NET.",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#0a0a0a",
+    "icons": [
+        {
+            "src": "img/logo.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ]
+}

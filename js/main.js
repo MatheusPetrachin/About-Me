@@ -1,83 +1,63 @@
-document.querySelectorAll('section').forEach(section => {
-    section.addEventListener('mouseenter', function() {
-        this.firstElementChild.classList.add('section-hover')
-    }, false)
-    section.addEventListener('mouseleave', function() {
-        this.firstElementChild.classList.remove('section-hover')
-    }, false)
-})
+const menuToggle = document.querySelector('[data-menu-toggle]');
+const navigation = document.querySelector('[data-navigation]');
 
-AOS.init()
-
-function myFunction() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Copied: " + copyText.value;
+function closeMenu() {
+    if (!menuToggle || !navigation) return;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    navigation.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
 }
 
-function outFunc() {
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Click to copy my email";
+if (menuToggle && navigation) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+        navigation.classList.toggle('is-open', !isOpen);
+        document.body.classList.toggle('menu-open', !isOpen);
+    });
+
+    navigation.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeMenu();
+    });
 }
 
-function getAge() {
-    var today = new Date();
-    var birthDate = new Date(1998, 06, 15);
-    var age = today.getFullYear() - birthDate.getFullYear();
-    var m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
+document.querySelectorAll('[data-current-year]').forEach((element) => {
+    element.textContent = new Date().getFullYear();
+});
 
-    var myAgeDiv = document.getElementById("myAgeDiv");
-    myAgeDiv.innerHTML = age;
+const copyButton = document.querySelector('[data-copy-email]');
 
-    console.log(age)
-}
-getAge();
+if (copyButton) {
+    copyButton.addEventListener('click', async () => {
+        const email = copyButton.dataset.email;
+        const originalLabel = copyButton.textContent;
 
-// Galerias de Video/Imagem
-var slideIndex = 1;
-showSlides(slideIndex);
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(email);
+            } else {
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                textArea.setAttribute('readonly', '');
+                textArea.style.position = 'fixed';
+                textArea.style.opacity = '0';
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                textArea.remove();
+            }
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+            copyButton.textContent = 'E-mail copiado';
+        } catch {
+            copyButton.textContent = 'Use o link acima';
+        }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-WebFontConfig = {
-    google: { families: ['Open+Sans::latin'] }
-};
-(function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-})();
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+        window.setTimeout(() => {
+            copyButton.textContent = originalLabel;
+        }, 2200);
+    });
 }
